@@ -10,7 +10,13 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <h:outputText value="#{controller.editedNotes.title}" />
-        <h:outputText value="#{controller.editedNotes.note}" />
+        <hr />
+        <h1><h:outputText value="#{controller.editedNotes.title}" /></h1>
+        <hr />
+        <p><h:outputText value="#{controller.editedNotes.note}" /></p>
+        <h:form>
+            <h:commandButton value="Retour" action="index.xhtml" />
+        </h:form>
+        
     </body>
 </html>

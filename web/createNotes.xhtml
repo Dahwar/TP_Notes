@@ -13,12 +13,20 @@ and open the template in the editor.
     <body>
         <h1>Nouvelle note : </h1>
         <h:form>
-            Titre : 
-            <h:inputText id="titre" value="#{controller.editedNotes.title}"></h:inputText>
-            Contenu : 
-            <h:inputTextarea id="contenu" value="#{controller.editedNotes.note}"></h:inputTextarea>
-            <h:commandButton value="Valider" action="#{controller.doAddNotes}">
-            </h:commandButton>
+            <table>
+                <tr>
+                    <td>Titre : </td>
+                    <td><h:inputText id="titre" value="#{controller.editedNotes.title}"></h:inputText></td>
+                </tr>
+                <tr>
+                    <td>Contenu : </td>
+                    <td><h:inputTextarea id="contenu" value="#{controller.editedNotes.note}"></h:inputTextarea></td>
+                </tr>
+                <tr>
+                    <td><h:commandButton value="Valider" action="#{controller.doAddNotes}" /></td>
+                    <td><h:commandButton value="Annuler" action="index.xhtml" /></td>
+                </tr>
+            </table>
         </h:form>
     </body>
 </html>
